@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Koulen', cursive;
+}
+
+nav{
+    background-color: black;
+}
+
+header{
+    background-color: red;
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+
+.imagen-arriba{
+    width: 150px;
+    height: 100px;
+}
+
+.video{
+    background-color: red;
+}
+
+.video iframe{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 450px;
+}
+
+.juego{
+    background-color: red;
+}
+
+
+.juego p{
+    color: white;
+    background-color: red;
+}
+
+footer{
+    color: white;
+    background-color: black;
+    display: grid;
+    grid-template-areas: "copy"
+    "redes-sociales"
+    ;
+    justify-content: center;
+}
+
+h2{
+    color: white;
+    text-align: center;
+}
+
+.como-jugar{
+    color: white;
+    text-align: center;
+}
+
+.imagen-principal{
+    border: solid 5px black;
+}
+
+.imagen-index{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+.ayuda-articulo{
+    color: white;
+    background-color: red;
+}
+
+.torneos{
+    background-color: red;
+    color: white;
+}
+
+.torneos img{
+    border: solid 5px white;
+}
+
+footer p{
+    grid-area: copy;
+    margin: 0 auto;
+}
+
+.redes{
+    grid-area: redes-sociales;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 500px) {
+     .imagen-index{
+        width: 450px;
+        height: 300px;
+     }
+    
+     .torneos img{
+         width: 450px;
+         height: 300px;
+     }
+
+     .juego article p{
+         font-size: small;
+     }
+
+     .ayuda-articulo p{
+         font-size: small;
+     }
+}
