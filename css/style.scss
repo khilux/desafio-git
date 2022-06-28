@@ -1,17 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+@import "./variables";
+@import "./header";
+@import "./reset";
 
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Koulen', cursive;
-}
+
 
 nav{
-    background-color: black;
+    background-color: var(--color-secundario);
 }
 
 header{
-    background-color: red;
+    background-color: var(--color-primario);
 }
 
 h1{
@@ -34,7 +33,7 @@ h1{
 }
 
 .video{
-    background-color: red;
+    background-color: var(--color-primario);
     &:iframe{
         margin-top: 20px;
         margin-bottom: 20px;
@@ -44,16 +43,16 @@ h1{
 
 
 .juego{
-    background-color: red;
+    background-color: var(--color-primario);
     p{
         color: white;
-        background-color: red;
+        background-color: var(--color-primario);
     }
 }
 
 footer{
     color: white;
-    background-color: black;
+    background-color: var(--color-secundario);
     display: grid;
     grid-template-areas: "copy"
     "redes-sociales"
@@ -75,17 +74,6 @@ h2{
     text-align: center;
 }
 
-.imagen-principal{
-    border: solid 5px black;
-}
-
-.imagen-index{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 15px;
-}
-
-
 .imagenes-article img{
 margin-top: 30px;
 margin-bottom: 30px;
@@ -96,7 +84,7 @@ margin-left: 180px;
 
 .ayuda-articulo{
     color: white;
-    background-color: red;
+    background-color: var(--color-primario);
 }
 
 .texto-index{
@@ -106,7 +94,7 @@ margin-left: 180px;
 }
 
 .torneos{
-    background-color: red;
+    background-color: var(--color-primario);
     color: white;
     &:img{
         border: solid 5px white;
@@ -122,7 +110,7 @@ margin-left: 180px;
 }
 
 body nav{
-    background-color: red;
+    background-color: var(--color-primario);
 }
 
 .img-kickoff{
